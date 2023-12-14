@@ -1,0 +1,90 @@
+GET http://127.0.0.1:8000/
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+###
+
+POST http://127.0.0.1:8000/
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+{"title": "Pasgianos", 
+"description": "sweet and colourful fizzy-drink",
+"price": 1.5,
+"slug": "Pasgianos_15"}
+
+###
+
+GET http://127.0.0.1:8000/drink/3
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+
+###
+PUT http://127.0.0.1:8000/drink/1
+Content-Type: application/json
+
+
+{"title": "Coca-Cola","description": "Sweet and black fizzy-drink",
+    "price": 1.5, "slug": "coca-cola_15"}
+
+
+###
+
+DELETE http://127.0.0.1:8000/drink/
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+###
+
+GET http://127.0.0.1:8000/drink_list
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+
+###
+
+POST http://127.0.0.1:8000/drink_list
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+###
+
+GET http://127.0.0.1:8000/drink_rud/2
+Content-Type: application/json
+
+
+###
+
+PUT http://127.0.0.1:8000/drink_rud/2
+Content-Type: application/json
+
+{"slug": "Seven-Up_15"}
+
+###
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{"email": "mina@drinks.com", "first_name": "Mina", 
+"last_name": "Eskander", "username": "minaeskander", 
+"password": "Mina1234"}
+
+###
+
+POST http://127.0.0.1:8000/login 
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+{"email": "mina@drinks.com", "first_name": "Mina", 
+"last_name": "Eskander", "username": "minaeskander",
+"password": "Mina1234"}
+
+###
+GET http://127.0.0.1:8000/test_token 
+Content-Type: application/json
+Authorization: Token 5588fc7c7ddacc19e31da663f853f65656fbb7a3
+
+
+###
+
